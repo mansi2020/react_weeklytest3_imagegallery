@@ -1,0 +1,95 @@
+/* navbar */
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: white;
+  background-color: rgb(37, 37, 37);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.imagegallery-searchdata {
+  display: flex;
+  gap: 1rem;
+}
+.imagegallery-searchdata > input {
+  padding: 10px 16px;
+  width: 500px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.imagegallery-searchdata > input:focus {
+  outline: none;
+}
+.imagegallery-searchdata > button {
+  padding: 0 2rem;
+  background-color: rgb(255, 153, 0);
+  color: rgb(37, 37, 37);
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  border: 2px solid rgb(255, 153, 0);
+}
+.imagegallery-searchdata > button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
+}
+
+/* imagegallery-image */
+.imagegallery-images {
+  width: 100%;
+  gap: 2rem;
+  column-count: 3;
+  column-fill: balance;
+  padding: 1rem;
+}
+.imagegallery-image {
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin-bottom: 2rem;
+  border-radius: 0.7rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.imagegallery-image img {
+  width: 100%;
+  border-radius: 0.7rem;
+}
+
+.imagegallery-conetnt {
+  position: absolute;
+  top: 10px;
+  z-index: 10;
+  color: white;
+  padding: 2rem;
+  padding-bottom: 0;
+}
+.imagegallery-conetnt > h3 {
+  margin-bottom: 1rem;
+}
+.download-link {
+  font-size: 1.3rem;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  text-decoration: none;
+  background-color: rgb(255, 153, 0);
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: inset 2px 2px 4px black;
+}
+.download-link:hover {
+  transform: translateY(-2px);
+}
